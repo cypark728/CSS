@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* * {} 디자인 시작전에 전체적으로 적용될 코드를 작성 */
+        b {color: blue;} /* 모든 b태그 */
+        #a1 {color: green;} /* 아이디는 화면 전역에서 고유해야함 */
+        .a1 {color: blueviolet;} /* 클래스는 동일한 이름이 여러개 여도 됩니다. */
+
+        /* .b1 p {color: pink;} 모든 자식*/
+        .b1 > p {color: pink;} /* 직계 자식 */
+
+        /* 클래스c1 하위의 input 태그중 type속성이 text인 태그 */
+        .c1 > input[type=text] {color: red;}
+
+        li[class*="col-"] {color: rgb(37, 151, 151);}
+
+    </style>
+</head>
+<body>
+    <b>선택자</b>
+    <b>선택자</b>
+
+    <p id="a1">아이디선택자</p>
+    <p class="a1">클래스 선택자</p>
+    <p class="a1">클래스 선택자</p>
+
+    <div class="b1">
+        <p>하위선택자</p>
+        <p>하위선택자</p>
+        <p>하위선택자</p>
+        <ul>
+            <li><p>하위선택자 띄어쓰기</p></li>
+            <li><p>하위선택자 띄어쓰기</p></li>
+        </ul>
+    </div>
+
+
+    <div class="c1">
+        <input type="text" >
+        <input type="text" >
+        <input type="password" >
+    </div>
+
+    <ul>
+        <li class="col-1">a</li>
+        <li class="col-2">b</li>
+        <li class="col-3">c</li>
+    </ul>
+
+
+
+</body>
+</html>
