@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        #header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            z-index: 5;
+        }
+        .menu {
+            text-align: center;
+            background-color: black;
+        }
+        .menu ul li {
+            display: inline;
+        }
+        .menu ul li a {
+            display: inline-block;
+            padding: 10px;
+            color: #777;
+        }
+
+        .floating-btn {
+            background-color: yellow;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 10; /* 포지션이 겹치게 되면 z축의 우선순위를 지정하는데, */
+        }
+    </style>
+
+</head>
+<body>
+    <aside class="floating-btn">
+            TOP
+    </aside>
+    
+    <header id="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+                <li><a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section style="height: 1500px; margin-top: 41px;">
+        본문내용
+    </section>
+
+</body>
+</html>

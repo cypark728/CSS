@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <style>
+            /* 1240px 이상에서 동작함 */
+            @media(min-width: 1240px){
+                .box {
+                    border: 1px solid #777;
+                    width: 80%;
+                    margin: 0 auto;
+                    overflow: hidden;
+                }
+                .box li {
+                    float: left;
+                    width: 16.6666%;
+                }
+            }
+            /* 767px이상 ~ 1239px이하에서 동작하는 디자인 - 태블릿사이즈 */
+            @media(max-width: 1239px) and (min-width: 767px){
+
+            }
+            /* 766px이하에서 동작하는 디자인인 */
+            @media(max-width: 766){
+
+            }
+        </style>
+</head>
+<body>
+    
+    <h3>웹환경 박스 6개, 태블릿 환경에서는 4개, 모바일 환경 박스 2개</h3>
+
+    <div class="box">
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스</li>
+        <li>박스 </li>
+    </div>
+
+</body>
+</html>
